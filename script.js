@@ -84,8 +84,8 @@ function displayCategories() {
       <p>Spent: ${cat.spent}</p>
       <p>Remaining: ${cat.limit - cat.spent}</p>
       ${warning}
-      <button onclick="toggleDetails(${catIndex})">👁 View Details</button>
-      <button onclick="removeCategory(${catIndex})">🗑 Delete Category</button>
+      <button onclick="toggleDetails(${catIndex})">View Expenses</button>
+      <button onclick="removeCategory(${catIndex})">Delete Category</button>
       <div id="details-${catIndex}" class="details" style="display:none;">
         <h4>Expenses:</h4>
         <ul>
