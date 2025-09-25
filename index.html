@@ -10,27 +10,32 @@
   <div class="container">
     <h1>Budget Tracker</h1>
 
-    <div class="section">
-      <h2>Create Category</h2>
-      <input type="text" id="categoryName" placeholder="Category name (e.g. Food)">
-      <input type="number" id="categoryLimit" placeholder="Budget limit (e.g. 50000)">
-      <button id="addCategoryBtn">Add Category</button>
-    </div>
+    <div class="content">
+      <!-- Left side (forms) -->
+      <div class="forms">
+        <div class="section">
+          <h2>Create Category</h2>
+          <input type="text" id="categoryName" placeholder="Category name (e.g. Food)">
+          <input type="number" id="categoryLimit" placeholder="Budget limit (e.g. 50000)">
+          <button id="addCategoryBtn">Add Category</button>
+        </div>
 
-    <div class="section">
-      <h2>Add Expense</h2>
-      <label for="categorySelect">Select Category</label>
-      <select id="categorySelect">
-        <option value="">-- Select Category --</option>
-      </select>
-      <input type="text" id="expenseName" placeholder="Expense name (e.g. Groceries)">
-      <input type="number" id="expenseAmount" placeholder="Amount (e.g. 2000)">
-      <button id="addExpenseBtn">Add Expense</button>
-    </div>
+        <div class="section">
+          <h2>Add Expense</h2>
+          <label for="categorySelect">Select Category</label>
+          <select id="categorySelect">
+            <option value="">-- Select Category --</option>
+          </select>
+          <input type="text" id="expenseName" placeholder="Expense name (e.g. Groceries)">
+          <input type="number" id="expenseAmount" placeholder="Amount (e.g. 2000)">
+          <button id="addExpenseBtn">Add Expense</button>
+        </div>
+      </div>
 
-    <div class="section">
-      <h2>Budgets</h2>
-      <div id="categoriesList"></div>
+      <div class="budget-cards">
+        <h2>Budgets</h2>
+        <div id="categoriesList"></div>
+      </div>
     </div>
   </div>
 
